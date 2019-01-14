@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <title>Document</title>
+
+    <!-- build:css assets/styles/style.css -->
+    <link rel="stylesheet" href="temp/styles/styles.css" />
+    <!-- endbuild -->
+
+    <!-- build:js assets/scripts/Vendor.js -->
+    <script src="/temp/scripts/Vendor.js"></script>
+    <!-- endbuild -->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="ui message">
+        <i class="close icon"></i>
+        <p>
+          Since the Embed Token only lasts 1 hour, I can't hardcode the below
+          details. Please provide your own report details or grab whatever
+          Microsoft gives you at
+          <a
+            href="https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html"
+            >the Power BI Embedded Playgrounds.</a
+          >
+        </p>
+      </div>
+
+      <form class="ui form">
+        <div class="field">
+          <label>Embed Token</label>
+          <input type="text" placeholder="Embed Token" id="txtEmbedToken" />
+        </div>
+        <div class="field">
+          <label>Embed URL</label>
+          <input type="text" placeholder="Embed URL" id="txtEmbedUrl" />
+        </div>
+        <div class="field">
+          <label>Report ID</label>
+          <input type="text" placeholder="Report ID" id="txtReportId" />
+        </div>
+        <!--
+         value="https://app.powerbi.com/reportEmbed?reportId=c6d3685d-5e03-4211-bf85-80deac4e60d5&groupId=80b8c485-9732-4b6b-b5d9-69bc650cf00c"
+
+         value="c6d3685d-5e03-4211-bf85-80deac4e60d5"
+      -->
+        <button class="ui button primary" type="button" id="btnEmbed">
+          Embed
+        </button>
+      </form>
+
+      <div class="report"></div>
+
+      <div id="pbiPagesContainer"></div>
+    </div>
+
+    <!-- build:js assets/scripts/App.js -->
+    <script type="text/javascript" src="/temp/scripts/App.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
