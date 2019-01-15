@@ -1,4 +1,4 @@
-import pbiPages from './modules/PbiPages';
+import pbiPages from '../../../src/pbi-pages';
 import * as pbi from 'powerbi-client';
 
 document.querySelector('.close').addEventListener('click', e => {
