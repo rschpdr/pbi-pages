@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "normalize.css": "8.0.1",
+    "pbi-pages": "^1.0.0",
     "powerbi-client": "^2.6.6"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 @import 'normalize.css';
+@import 'pbi-pages';
 @import 'base/_mixins';
 @import 'base/_variables';
 @import 'base/_global';
 @import 'modules/_sprite';
-@import '../../../src/pbi-pages';
